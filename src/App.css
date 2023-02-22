@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  display: flex;
+  background-color: #354055;
+  flex-direction: column;
+  color: white;
+  
 }
 
 .App-logo {
@@ -15,13 +20,15 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  width: 100%;
+
 }
 
 .App-link {
@@ -36,3 +43,142 @@
     transform: rotate(360deg);
   }
 }
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #555;
+  appearance: none;
+  background-color: #fff;
+  background-image: linear-gradient(45deg, transparent 50%, #555 50%),
+                    linear-gradient(135deg, #555 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 2px), 
+                       calc(100% - 15px) calc(1em + 2px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0 3px #aaa;
+}
+
+select option {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  color: #555;
+  background-color: #fff;
+}
+.polling-unit-con{
+display: flex;
+flex-direction: column;
+width: full;
+justify-content: center;
+align-items: center;
+padding: 40px;
+
+
+}
+.polling-unit-dropdown {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+.polling-unit-dropdown label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.polling-unit-dropdown select {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+.polling-unit-dropdown select:hover {
+  border-color: #666;
+}
+
+.polling-unit-dropdown select:focus {
+  outline: none;
+  border-color: #2e6da4;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.polling-unit-dropdown option {
+  font-size: 1rem;
+}
+
+
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  
+}
+
+.submit-button:hover {
+  background-color: #0069d9;
+}
+
+.party-results {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 10px;
+  align-items: center;
+}
+
+
+.party-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: #007bff;
+}
+
+.party-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.party-score {
+  font-size: 1.2rem;
+}
+
+.no-results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+}
+
